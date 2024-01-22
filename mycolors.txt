@@ -1,0 +1,22 @@
+/* MY COLORS */
+/* 
+  --primary-color: hsl(9, 94%, 61%);
+  --primary-color-alt: hsl(28, 72%, 83%);
+  --second-color: #3e537c;
+  --second-color-alt: hsla(220, 33%, 36%, 65%);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #fbfbfb;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color: hsl(300, 100%, 0%);
+  background: #1f2833;
+  color:  #66fcf1;
+  color:  #45a29e;
+  color: #5c6c7c;
+  border-color: #fce181;
+  border: 1px solid #45a29e;
+  border-color: #E23B3B;
+  color: #16ffbd;
+
+
+
+ */

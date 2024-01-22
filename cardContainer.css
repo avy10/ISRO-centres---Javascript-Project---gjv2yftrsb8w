@@ -1,0 +1,45 @@
+.cardContainer{
+    height: 80vh;
+    width: 70vw;
+    /* padding: 15px; */
+    padding-left: 100px;
+    margin: auto auto;
+    border: 2px solid aqua;
+    margin-top: 20px;
+    overflow: scroll;
+
+}
+.cardContainer::-webkit-scrollbar {
+	height: 0px;
+	width: 4px;
+	border-radius: 25px;
+}
+.cardContainer::-webkit-scrollbar-track {
+	background: white;
+}
+.cardContainer::-webkit-scrollbar-thumb {
+	background: aqua;
+	border-radius: 30px;
+}
+.cardContainer::-webkit-scrollbar-thumb:hover {
+	background: #bbb;
+}
+.cardContainer p{
+	padding: 15px;
+	/* padding-left: 90px; */
+	color: rgba(255, 255, 255, 0.911);
+}
+
+.card{
+    color: white;
+    width: 15vw;
+    height: fit-content;
+        border: 2px solid blueviolet ;
+
+
+}
+
+#name{
+    text-align: center;
+    color: aqua;
+}

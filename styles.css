@@ -1,1 +1,137 @@
+/* ----- SMOOTH SCROLL ----- */
+html {
+	scroll-behavior: smooth;
+	/*  smooth, the browser will animate the scrolling smoothly, instead of jumping instantly. This can create a nice effect when the user clicks on a link that takes them to another part of the page. For example, if you have a long page with different sections, and a navigation bar with links to those sections, you can use this code to make the scrolling smooth(instead of directly jumping to the section) when the user clicks on those links. */
+}
+::selection {
+	background: rgb(93, 132, 132);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+	height: 0px; /* this property hides the horizontal scroll bar, see the width of scroll bar is 0 so u cant see the horizontal scroll bar */
+	width: 0px; /* this property hides the vertical scroll bar, see the height of scroll bar is 0 so u cant see the vertical scroll bar */
+}
+
+/* ::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #bbb;
+} */
+
+/* This code is using the ::-webkit-scrollbar CSS pseudo-element, which allows you to customize the appearance of the scrollbar in webkit-based browsers (such as Chrome, Safari, and Opera). You can use different pseudo-elements to style different parts of the scrollbar, such as the buttons, the track, the thumb, and the corner. For example, this code is doing the following:
+
+Setting the width of the scrollbar to 5px and the border-radius to 25px.
+Setting the background color of the scrollbar track to #f1f1f1.
+Setting the background color of the scrollbar thumb to #ccc and the border-radius to 30px.
+Changing the background color of the scrollbar thumb to #bbb when the user hovers over it. */
+
+body {
+	background: url("P18.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100lvh;
+	width: 100lvw;
+
+	margin: 0;
+}
+.container {
+	/* height: 200%; */
+	height: 100%;
+	width: 100%;
+	margin: auto auto;
+	background-color: hsla(0, 0%, 0%, 0.377);
+	overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+	height: 0px;
+	width: 0px;
+	border-radius: 25px;
+}
+.container::-webkit-scrollbar-track {
+	background: aqua;
+}
+.container::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 30px;
+}
+.container::-webkit-scrollbar-thumb:hover {
+	background: #bbb;
+}
+
+h1 {
+	/* color: rgb(255, 255, 255); */
+	margin: auto auto;
+	color: white;
+	width: fit-content;
+}
+
+#blue {
+	color: rgb(0, 0, 255);
+}
+
+#saffron {
+	color: orange;
+}
+
+#green {
+	color: green;
+}
+
+header {
+	display: flex;
+	justify-content: flex-start;
+
+	height: 8vh;
+	width: 60vw;
+	/* gap: ; */
+	margin: auto auto;
+	/* border: 2px solid aqua; */
+}
+
+header img {
+	height: 100%;
+	margin-left: 30px;
+}
+.info {
+	height: fit-content;
+	width: 60vw;
+	margin: auto auto;
+	margin-top: 1vh;
+	padding: 10px;
+	/* border: 1px solid aqua; */
+	border-radius: 10px;
+	font-size: 1.5em;
+	color: white;
+	/* background-color: ; */
+
+	display: flex;
+	justify-content: flex-start;
+	/* justify-content: center; */
+	align-items: center;
+	gap : 30px;
+}
+
+.info p{
+	padding: 5px;
+	padding-left: 20px;
+	color: white;
+	
+}

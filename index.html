@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO CENTRES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="searchWrapper.css">
+    <link rel="stylesheet" href="cardContainer.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="icons">
+                <a href="https://www.isro.gov.in" target="_blank"><img src="isroLogo.png" /> </a>
+            </div>
+            <h1><span id="saffron">I</span>ndian Space <span id="blue">R</span>esearch <span
+                    id="green">O</span>rganisation</h1>
+            <!-- https://i.pinimg.com/736x/65/a3/71/65a371107aff41be39ad6333757cb50c.jpg -->
+            <div class="icons">
+                <img src="https://i.pinimg.com/736x/65/a3/71/65a371107aff41be39ad6333757cb50c.jpg" />
+            </div>
+        </header>
+        <!-- <header>
+            <div class="icons">
+                <a href="https://www.isro.gov.in" target="_blank"><img src="isroLogo.png" /> </a>
+            </div>
+            <h1><span id="saffron">I</span>ndian Space <span id="blue">R</span>esearch <span
+                    id="green">O</span>rganisation</h1>
+
+        </header> -->
+
+
+        <div class="info">
+
+            <div class="search-wrapper">
+                <div class="input-holder">
+                    <input type="text" class="search-input" placeholder="Type to search" />
+                    <button class="search-icon"><span>🔍</span></button>
+                </div>
+                <span class="close">❌</span>
+            </div>
+
+            <div class="buttonsContainer hidden">
+                <button class="adi ">STATE</button>
+                <button class="adi ">CENTER</button>
+                <button class="adi ">CITY</button>
+            </div>
+            <p>Click 🔍 to search the locations of ISRO Centres based on name of city or state or, name of centre</p>
+
+
+        </div>
+        <div class="cardContainer">
+            <!-- < -->
+            <div class="card">
+
+                <p id="name">ISRO Telemetry, Tracking and Command Network (ISTRAC)</p>
+                <p>STATE
+                    <br />bihar<br>CITY<br>Patna
+                </p>
+            </div>
+            <div class="card">
+
+                <p id="name">"Development and Educational Communication Unit (DECU)</p>
+                <p>STATE
+                    <br />bihar<br>CITY<br>Patna
+                </p>
+            </div>
+            <div class="card">
+
+                <p id="name">Centre for Space Science and Technology Education in Asia-Pacific (CSSTEAP)</p>
+                <p>STATE
+                    <br />bihar<br>CITY<br>Patna
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="searchButton.js"></script>
+</body>
+
+</html>

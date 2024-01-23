@@ -40,3 +40,137 @@
 		width: fit-content;
 	}
 }
+@media only screen and (max-width: 1440px) {
+	.card {
+		width: 24vw;
+	}
+
+	.cardContainer {
+		padding-left: 20px;
+	}
+
+	.geographic {
+		column-gap: 50px;
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.card {
+		width: 24vw;
+	}
+
+	.cardContainer {
+		padding-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	header {
+		height: 8vh;
+		width: 90vw;
+		/* margin: 0 0; */
+	}
+
+	.info {
+		width: 86vw;
+		font-size: 1.35em;
+	}
+
+	.cardContainer {
+		padding-left: 60px;
+		width: 90vw;
+		column-gap: 1.5vw;
+		row-gap: 2.5vh;
+		/* padding-left: 30px; */
+	}
+
+	.card {
+		width: 26vw;
+	}
+
+	#name {
+		font-size: 1.25rem;
+	}
+
+	.geographic {
+		column-gap: 40px;
+		margin-right: 10px;
+	}
+
+	.right {
+		font-size: 1rem;
+	}
+
+	.right div {
+		padding: 3px 5px;
+	}
+
+	.bold {
+		margin: 3px;
+	}
+
+	.website {
+		width: fit-content;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	header {
+		height: 8vh;
+		width: 90vw;
+		/* margin: 0 0; */
+	}
+
+	.info {
+		width: 86vw;
+		font-size: 1.05em;
+	}
+
+	.cardContainer {
+		padding-left: 20px;
+		width: 90vw;
+		column-gap: 1.5vw;
+		row-gap: 2.5vh;
+		/* padding-left: 30px; */
+	}
+
+	.card {
+		width: 27.65vw;
+		height: 235px;
+		padding: 25px 15px;
+	}
+
+	#name {
+		font-size: 1.15rem;
+	}
+
+	.geographic {
+		column-gap: 40px;
+		margin-right: 10px;
+	}
+
+	.right {
+		font-size: 1rem;
+	}
+
+	.right div {
+		padding: 3px 5px;
+	}
+
+	.bold {
+		margin: 3px;
+	}
+
+	.website {
+		width: fit-content;
+	}
+
+	.left p {
+		font-size: 1rem;
+	}
+
+	.right {
+		font-size: 1rem;
+	}
+}

@@ -235,7 +235,7 @@ const centreBTN = document.querySelector(".centre");
 
 centreBTN.addEventListener("click", function () {
 	const searchQuery = inputBox.value.toLowerCase();
-	if (searchQuery == "") return;
+	// if (searchQuery == "") return;
 	stateBTN.classList.remove("searchActive");
 	cityBTN.classList.remove("searchActive");
 	if (centreBTN.classList.contains("searchActive") && searchQuery == "") {
@@ -255,11 +255,11 @@ centreBTN.addEventListener("click", function () {
 	}
 });
 stateBTN.addEventListener("click", function () {
-	const searchQuery = inputBox.value.toLowerCase();
-	if (searchQuery == "") return;
 	centreBTN.classList.remove("searchActive");
 	cityBTN.classList.remove("searchActive");
-	if (stateBTN.classList.contains("searchActive")) {
+	const searchQuery = inputBox.value.toLowerCase();
+	// if (searchQuery == "") return;
+	if (stateBTN.classList.contains("searchActive") && searchQuery == "") {
 		inputBox.value = "";
 		inputBox.blur();
 		stateBTN.classList.remove("searchActive");
@@ -278,10 +278,10 @@ stateBTN.addEventListener("click", function () {
 });
 cityBTN.addEventListener("click", function () {
 	const searchQuery = inputBox.value.toLowerCase();
-	if (searchQuery == "") return;
+	// if (searchQuery == "") return;
 	stateBTN.classList.remove("searchActive");
 	centreBTN.classList.remove("searchActive");
-	if (cityBTN.classList.contains("searchActive")) {
+	if (cityBTN.classList.contains("searchActive") && searchQuery == "") {
 		inputBox.value = "";
 		inputBox.blur();
 		cityBTN.classList.remove("searchActive");

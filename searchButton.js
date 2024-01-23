@@ -18,23 +18,30 @@ const infoDIVVA = document.querySelector(".info");
 const btnsDIVVA = document.querySelector(".buttonsContainer");
 const btns = document.getElementsByClassName("adi");
 document.addEventListener("DOMContentLoaded", function () {
-	var searchIcon = document.querySelector(".search-icon");
-	var closeIcon = document.querySelector(".close");
-	var searchInput = document.querySelector(".search-input");
-	var searchWrapper = document.querySelector(".search-wrapper");
+	const searchIcon = document.querySelector(".search-icon");
+	const closeIcon = document.querySelector(".close");
+	const searchInput = document.querySelector(".search-input");
+	const searchWrapper = document.querySelector(".search-wrapper");
 
 	searchIcon.addEventListener("click", function (event) {
 		searchToggle(event);
 		// const p = infoDIVVA.querySelector("p");
 		// infoDIVVA.removeChild(p);
 		infoDIVVA.querySelector("p").classList.add("hidden");
-		btnsDIVVA.classList.remove("hidden")
+		btnsDIVVA.classList.remove("hidden");
 	});
 
 	closeIcon.addEventListener("click", function (event) {
 		searchToggle(event);
 		infoDIVVA.querySelector("p").classList.remove("hidden");
-		btnsDIVVA.classList.add("hidden")
+		btnsDIVVA.classList.add("hidden");
+
+		inputBox.value = "";
+		inputBox.blur();
+		fetchData();
+		stateBTN.classList.remove("searchActive");
+		cityBTN.classList.remove("searchActive");
+		centreBTN.classList.remove("searchActive");
 	});
 
 	function searchToggle(event) {

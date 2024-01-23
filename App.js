@@ -234,16 +234,17 @@ const cityBTN = document.querySelector(".city");
 const centreBTN = document.querySelector(".centre");
 
 centreBTN.addEventListener("click", function () {
+	const searchQuery = inputBox.value.toLowerCase();
+	if (searchQuery == "") return;
 	stateBTN.classList.remove("searchActive");
 	cityBTN.classList.remove("searchActive");
-	if (centreBTN.classList.contains("searchActive")) {
+	if (centreBTN.classList.contains("searchActive") && searchQuery == "") {
 		inputBox.value = "";
 		inputBox.blur();
 		centreBTN.classList.remove("searchActive");
 		renderALL(arr);
 	} else {
 		centreBTN.classList.add("searchActive");
-		const searchQuery = inputBox.value.toLowerCase();
 		if (searchQuery == "") return;
 		console.log(searchQuery);
 		const searchArray = arr.filter((each) =>
@@ -254,6 +255,8 @@ centreBTN.addEventListener("click", function () {
 	}
 });
 stateBTN.addEventListener("click", function () {
+	const searchQuery = inputBox.value.toLowerCase();
+	if (searchQuery == "") return;
 	centreBTN.classList.remove("searchActive");
 	cityBTN.classList.remove("searchActive");
 	if (stateBTN.classList.contains("searchActive")) {
@@ -263,7 +266,7 @@ stateBTN.addEventListener("click", function () {
 		renderALL(arr);
 	} else {
 		stateBTN.classList.add("searchActive");
-		const searchQuery = inputBox.value.toLowerCase();
+
 		if (searchQuery == "") return;
 		console.log(searchQuery);
 		const searchArray = arr.filter((each) =>
@@ -274,8 +277,10 @@ stateBTN.addEventListener("click", function () {
 	}
 });
 cityBTN.addEventListener("click", function () {
+	const searchQuery = inputBox.value.toLowerCase();
+	if (searchQuery == "") return;
 	stateBTN.classList.remove("searchActive");
-	cityBTN.classList.remove("searchActive");
+	centreBTN.classList.remove("searchActive");
 	if (cityBTN.classList.contains("searchActive")) {
 		inputBox.value = "";
 		inputBox.blur();
@@ -283,7 +288,6 @@ cityBTN.addEventListener("click", function () {
 		renderALL(arr);
 	} else {
 		cityBTN.classList.add("searchActive");
-		const searchQuery = inputBox.value.toLowerCase();
 		if (searchQuery == "") return;
 
 		console.log(searchQuery);

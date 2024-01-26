@@ -76,7 +76,10 @@
 }
 .left p {
 	padding-left: 20px;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+}
+.left h3 {
+	font-size: 0.75rem;
 }
 .bold {
 	margin: 5px;
